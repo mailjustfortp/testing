@@ -1,0 +1,86 @@
+/* Common css to be included in all the files */
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Buttons */
+
+.button {
+  outline: 0;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button.button-dark {
+  background-color: #676565;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button.button-dark:hover {
+  background-color: #464343;
+  box-shadow: 0px 5px 15px -5px #464343;
+}
+
+.button.button-dark:active {
+  background-color: #676565;
+  transition: none;
+}
+
+/* Typewriter Effects from css-tricks.com */
+.typewriter {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.typewriter .typewriter-text {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; white-space: nowrap; }
+  to { width: 100%; white-space: nowrap; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

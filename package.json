@@ -1,0 +1,32 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "Assignment 1 for MERN Stack course",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run compile && nodemon -w server server/server.js",
+    "compile": "babel src --out-dir public",
+    "compile:watch": "babel -w src --out-dir public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainamcsheth/CS648-MERN.git"
+  },
+  "author": "Jainam Sheth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jainamcsheth/CS648-MERN/issues"
+  },
+  "homepage": "https://github.com/jainamcsheth/CS648-MERN#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "nodemon": "^2.0.7"
+  }
+}
